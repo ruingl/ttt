@@ -1,0 +1,36 @@
+body {
+  padding: 20px;
+  color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+    
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+    
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #444;
+  color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+    
+.cell:hover {
+  background-color: #555;
+}
+    
+.winning-cell {
+  background-color: #f39c12 !important;
+}
